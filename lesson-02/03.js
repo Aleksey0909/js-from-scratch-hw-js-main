@@ -4,16 +4,16 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 90; // тестовое значение, можно изменять
+const score = 70; // тестовое значение, можно изменять
 let grade;
 // your code
 
-if (score < 50) {
-  grade = "f";
-} else if (score < 70) {
-  grade = "d";
-} else if (score < 80) {
-  grade = "c";
-} else if (score < 90) {
-  grade = "b";
-} else grade = "a";
+if (score <= 49) {
+  grade = "F";
+} else if (score <= 69) {
+  grade = "D";
+} else if (score <= 79) {
+  grade = "C";
+} else if (score <= 89) {
+  grade = "B";
+} else grade = "A";
