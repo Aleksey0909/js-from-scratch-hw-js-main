@@ -17,4 +17,3 @@ if (score < 50) {
 } else if (score < 90) {
   grade = "b";
 } else grade = "a";
-console.log(grade);
