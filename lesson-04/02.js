@@ -16,8 +16,8 @@
 */
 
 function findUniqueElements() {
-  const numbers = [1, 2, 3, 2, 1, 4];
+  const numbers = [1, 2, 2, 3, 4, 4, 5];
   const uniquenumbers = new Set(numbers);
   return Array.from(uniquenumbers);
 }
-console.log(findUniqueElements([1, 2, 3, 2, 1, 4]));
+console.log(findUniqueElements([1, 2, 2, 3, 4, 4, 5]));
