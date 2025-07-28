@@ -12,4 +12,7 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-function doubleEachCharacter() {}
+function doubleEachCharacter(str) {
+  const repeatedWords = Array.from(str, (n) => n.repeat(2));
+  return str.concat(...repeatedWords);
+}
