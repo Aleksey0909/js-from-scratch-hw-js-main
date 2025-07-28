@@ -16,4 +16,3 @@ function doubleEachCharacter(str) {
   const repeatedWords = Array.from(str, (n) => n.repeat(2));
   return repeatedWords.join("");
 }
-console.log(doubleEachCharacter("hello"));
