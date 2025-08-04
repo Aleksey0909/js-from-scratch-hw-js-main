@@ -15,10 +15,8 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findUniqueElements(numbers) {
-  const uniquenumbers = new Set(numbers);
-  return Array.from(uniquenumbers);
-}
-console.log(
-  findUniqueElements(["apple", "banana", "apple", "orange", "banana"])
-);
+// function findUniqueElements(numbers) {
+//   const uniquenumbers = new Set(numbers);
+//   return Array.from(uniquenumbers);
+// }
+// console.log(findUniqueElements([1, 2, 2, 3, 4, 4]));
