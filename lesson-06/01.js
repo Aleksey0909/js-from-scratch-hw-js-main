@@ -26,9 +26,7 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 const filter = (array, callback) => {
   const newArr = [];
   for (let i = 0; i < array.length; i++) {
-    console.log("for");
     if (callback(array[i], i)) {
-      console.log("if");
       newArr.push(array[i]);
     }
   }
