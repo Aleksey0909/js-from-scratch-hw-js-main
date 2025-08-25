@@ -25,11 +25,11 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
 const map = (array, callback) => {
-  const result = []; // создаем новый массив для результатов
+  const result = [];
   for (let i = 0; i < array.length; i++) {
-    const element = array[i]; // текущий элемент массива
-    const mappedElement = callback(element, i); // вызываем callback для элемента
-    result.push(mappedElement); // добавляем результат в новый массив
+    const element = array[i];
+    const mappedElement = callback(element, i);
+    result.push(mappedElement);
   }
   return result;
 };
@@ -39,4 +39,4 @@ const doubledNumbers = map(numbers, (element, index) => {
   return element * 2;
 });
 
-console.log(doubledNumbers); // Должен вывести: [2, 4, 6, 8, 10]
+console.log(doubledNumbers);
