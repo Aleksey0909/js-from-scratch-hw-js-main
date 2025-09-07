@@ -10,5 +10,19 @@
 */
 
 function truncate(str, maxLength) {
-  // your code
+  if (
+    typeof str !== "string" ||
+    typeof maxLength !== "number" ||
+    maxLength < 0
+  ) {
+    throw new Error("Неверные аргументы");
+  }
+
+  if (str.length > maxLength) {
+    return str.slice(0, maxLength) + "...";
+  } else {
+    return str;
+  }
 }
+
+console.log(truncate("Вот, что мне действительно нравится в этом", 20));
